@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading is fundamental 📓</title>
+    <style>
+      body {
+        background: linear-gradient(#4797b1, white);
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .image {
+        border-radius: 100%;
+        padding: 2%;
+        display: inline;
+        margin: 10px;
+        transition: all 200ms ease-in-out;
+      }
+
+      h1 {
+        font-size: 80px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        margin: 0 auto;
+        color: black;
+      }
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: #4797b1;
+        font-weight: lighter;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .image:hover {
+        opacity: 0.8;
+      }
+      h3 {
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: lighter;
+      }
+      h4 {
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: lighter;
+      }
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        line-height: 24px;
+      }
+
+      .button {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #4797b1;
+        background: #4797b1;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 150ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #4797b1;
+        border: 1px solid #4797b1;
+      }
+      .contactInfo {
+        text-align: center;
+        color: #4797b1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>READING</h1>
+      <h2>Why you should pick up a book more often</h2>
+      <hr />
+      <h3>Reading expands the mind</h3>
+      <p>
+        For starters, reading helps to expand the mind and give us more ideas.
+        Reading has been proven to
+        <strong>keep our minds young, healthy and sharp</strong>, with studies
+        showing that reading can evenhelp prevent alzheimer’s disease. Reading
+        also develops the imagination and allows us to dream and think in ways
+        that we would have never been able to before.
+      </p>
+      <h3>Reading allows for creative thinking</h3>
+      <p>
+        Another one of the many reasons why reading is important is that it
+        allows for <strong>creative thinking</strong>. Reading can inspire you
+        when you are feeling bored, down or in a rut. It can help give you that
+        very needed pick-me-up without having to search too far for it. Reading
+        helps get the creative side of your brain thinking, unlike television
+        that really does not use much creative brain power.
+      </p>
+      <h3>Reading helps improve concentration</h3>
+      <p>
+        If you are still unconvinced or unsure about the importance of reading,
+        or feel as though it’s not beneficial for you personally, then it’s
+        important to note that reading actually helps improve concentration.
+        Reading can <strong>train our mind</strong> how to focus properly, which
+        is invaluable in nearly everything we do on a daily basis — whether it
+        be as we study or even in our careers and in our personal relationships.
+        We could all benefit from practicing our concentration skills.
+      </p>
+      <hr />
+      <h3 class="favorites">Viktoria's current favorites</h3>
+      <a
+        href="https://www.goodreads.com/book/show/41057294-normal-people"
+        target="_blank"
+      >
+        <img
+          class="image"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/559/original/IMG_0397.jpg?1633811748"
+          width="200px"
+          alt="normal people"
+        />
+      </a>
+      <a
+        href="https://www.goodreads.com/book/show/18143977-all-the-light-we-cannot-see"
+        target="_blank"
+      >
+        <img
+          class="image"
+          src="https://images-eu.ssl-images-amazon.com/images/I/91KSIA1PyML._AC_UL600_SR600,600_.jpg"
+          width="200px"
+          alt="all the light"
+        />
+      </a>
+      <a
+        href="https://www.goodreads.com/book/show/56597885-beautiful-world-where-are-you"
+        target="blank"
+      >
+        <img
+          class="image"
+          src="https://m.media-amazon.com/images/I/516jE7j8Q4L._SL500_.jpg"
+          width="200px"
+          alt="beautiful world"
+        />
+      </a>
+      <hr />
+      <br />
+      <h4>Fancy discovering a new book?</h4>
+      <div class="button">
+        <button>Get a recommendation</button>
+      </div>
+      <br />
+      <span class="contactInfo">
+        <p>
+          <em>
+            Coded by
+            <a
+              href="https://www.goodreads.com/user/show/108278497-viktoria-schneider"
+              target="_blank"
+              >Viktoria Schneider</a
+            >
+          </em>
+        </p>
+      </span>
+    </div>
+    <script>
+      function getRecommendation() {
+        let mail = prompt("What is your E-Mail-Adress?");
+        let genre = prompt("What genre do you like?");
+        genre = genre.toLowerCase();
+        genre = genre.trim();
+
+        if (genre === "horror") {
+          alert(
+            "So you like the spooky stuff 👻  We'll send you some recommendations via E-Mail 📮"
+          );
+        } else if (genre === "romance") {
+          alert("How sweet 🥰 Romeo & Juliet coming your way via E-Mail 📮");
+        } else if (genre === "fantasy") {
+          alert(
+            "Escapism is key 🔑 Explore some new worlds with the books we send you via E-Mail 📮"
+          );
+        } else {
+          alert("We love that too! 🥳 Check your E-Mails for our favorites 📮");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", getRecommendation);
+    </script>
+  </body>
+</html>
